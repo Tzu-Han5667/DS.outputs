@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>COVID-19 Spread Trend</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/tooplate-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #FFFFFF;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #7FB3D5;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #2471A3;
+      }
+      </style>
+  </head>
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/logo-image.jpeg" alt="Blugoon by Tooplate" /></a>
+            </div>
+            <div class="author-content">
+              <h4>COVID-19</h4>
+              <span>Spread Trend</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">Data Processing</a></li>
+                <li><a href="#section2">Case Amount</a></li>
+                <li><a href="#section3">Death Rate</a></li>
+                <li><a href="#section4">World Route</a></li>
+              </ul>
+            </nav>
+            <div class="copyright-text">
+              <p>About Me:<br>
+                Data Science Msc<br>
+              1905667 Tzu-Han Lin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+        <div class="top-header">
+        	<img src="assets/images/aerobic-girls.jpg" alt="aerobic girls" />
+        </div>
+          <div class="section-heading">
+            <h2>Data Processing</h2>
+            <div class="line-dec"></div>
+            <span>In this project, I use 2 different csv files -- "COVID-19-geographic-disbtribution-worldwide.csv" and "WHO-COVID-19-global-data.csv".
+              In case of death rate calculation, I use python to do data processing, then select attributes I wanted into 2 new csv files -- "Death rate.csv" and "first_day.csv".              
+            </span>  
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="left-text">
+                  <h5>These 2 csv files and attributes are :</h5>
+                  <table>
+                    <table>
+                      <tr>
+                        <th>About<br>
+                          Death Rate</th>
+                        <th>About<br>
+                          First Case</th>
+                      </tr>
+                      <tr>
+                        <td>Deaths</td>
+                        <td>Country</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Confirmed</td>
+                        <td>Date</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Year</td>
+                        <td>  </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Month</td>
+                        <td>  </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Country_Name</td>
+                        <td>  </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Death_Rate</td>
+                        <td>  </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>yyyy_mm</td>
+                        <td>  </td> 
+                      </tr>
+                  </table>
+                  <p>For data processing:<a rel="nofollow" href="https://github.com/Tzu-Han5667/DV-EXAM/blob/master/Exam_final.ipynb">Exam_final.ipynb</a></p>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Case Amount</h2>
+            <div class="line-dec"></div>
+            <span>By case amount, we can realise monthly cases in each country. 
+              Also, we can figure out growth of COVID-19.
+            </span>
+            <div class='tableauPlaceholder' id='viz1589090051309' style='position: relative'>
+              <noscript>
+                  <a href='#'>
+                      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyDeathrateofCOVID-19&#47;CaseAmount&#47;1_rss.png' style='border: none' />
+                  </a>
+              </noscript>
+              <object class='tableauViz'  style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='site_root' value='' />
+                  <param name='name' value='MonthlyDeathrateofCOVID-19&#47;CaseAmount' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyDeathrateofCOVID-19&#47;CaseAmount&#47;1.png' /> 
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+              </object>
+            </div>                
+            <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1589090051309');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                    
+                  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+              var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+           </script>  
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Death Rate</h2>
+            <div class="line-dec"></div>
+            <span>By groupby command we can get monthly deaths and confirmed case, moreover, by function deaths/confirmed, we can get monthly death rate.
+              Death rate could demonstrate the most difficult period of COVID-19 in each country. And tell which month is the worst time.
+            </span>
+            <div class='tableauPlaceholder' id='viz1589089826176' style='position: relative'>
+              <noscript>
+                  <a href='#'>
+                      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyDeathrateofCOVID-19&#47;DeathRate&#47;1_rss.png' style='border: none' />
+                  </a>
+              </noscript>
+              <object class='tableauViz'  style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='site_root' value='' />
+                  <param name='name' value='MonthlyDeathrateofCOVID-19&#47;DeathRate' />
+                  <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyDeathrateofCOVID-19&#47;DeathRate&#47;1.png' /> 
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+              </object>
+            </div>                
+            <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1589089826176');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                    
+                  if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';
+                  } else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';
+                  } else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+              var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>  
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>World Route</h2>
+            <div class="line-dec"></div>
+            <span>After combining 2 original csv files, we can find the earliest date of cases in each country. By these dates, we can know the spread path of COVID-19.
+            </span>
+            <div class='tableauPlaceholder' id='viz1589089575122' style='position: relative'>
+              <noscript>
+                  <a href='#'>
+                      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;36&#47;36Y94QSB5&#47;1_rss.png' style='border: none' />
+                  </a>
+              </noscript>
+              <object class='tableauViz'  style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='path' value='shared&#47;36Y94QSB5' /> 
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;36&#47;36Y94QSB5&#47;1.png' /> 
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='filter' value='publish=yes' />
+              </object>
+            </div>  
+            <script src='plot.js'></script>              
+            <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1589089575122');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                    
+                  if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';
+                  } else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';
+                  } else { vizElement.style.width='100%';vizElement.style.height='727px';
+                  }                     
+              var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+      
+    
+    </script>
+  </body>
+</html>
